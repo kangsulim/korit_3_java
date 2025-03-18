@@ -37,8 +37,28 @@ public class Constructor {
         this.num = number;  // this : 해당 클래스에서 객체를 만들게 되면 객체 이름으로 대체됨.
                             // ex) 여기서 this는 constructor나 constructor1 등이 될 수 있음.
     }
+
+    // String title을 매개변수로 하는 생성자를 정의하고,
+    // RequiredArgsConstructor(String 매개변수를 필수로 요구하는 생성자)라는 안내문을
+    // 출력할 수 있도록 작성하고
+    // Main에서 4, title에 "이름"
+
+    Constructor(String title) {
+        System.out.println("RequiredArgsConstructor(String 매개변수를 필수로 요구하는 생성자)");
+        this.name = title;
+    }
     
     // -> '동일한 이름'을 가지고 '매개변수가 다른' 여러 개의 생성자를 만들 수 있다 --->>> 오버로딩(overloading)으로 볼 수 있다!!!
     
-    
+    Constructor(int num, String name) {
+        this.num = num;
+        this.name = name;
+        System.out.println("AllArgsConstructor(int, String 매개변수 전체를 요구하는 생성자)");
+    }
+
+    // method 정의
+    void showInfo() {
+        System.out.println("이 객체의 num 값 : " + num);
+        System.out.println("이 객체의 name 값 : " + name);
+    }
 }
