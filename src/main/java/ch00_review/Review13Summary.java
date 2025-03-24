@@ -42,19 +42,19 @@ class Character {
 
     public void attack(String monster) {
         int amount = switch (monster) {
-            case "slime" -> 10;
-            case "skeleton" -> 20;
-            case "goblin" -> 30;
-            case "dragon" -> 5000;
+            case "slime" -> 15;
+            case "skeleton" -> 25;
+            case "goblin" -> 35;
+            case "dragon" -> 6000;
             default -> 0;
         };
 
         if (amount == 0) {
             System.out.println("공격 대상이 존재하지 않습니다.");
         } else {
-            System.out.println(name + "이(가) " + power + "로 " + monster + "을(를) 공격!");
+            System.out.println(name + "이(가) " + power + "로 " + monster + "을(를) " + skill + " 공격!");
             System.out.println(name + "이(가) 경험치 " + amount + "을(를) 얻었습니다.");
-            gainExp(amount);    // 메서드 내부에서 메서드를 호출
+            gainExp(amount);    // private 메서드를 내부에서 호출
         }
     }
 
