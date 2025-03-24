@@ -4,8 +4,23 @@ package ch00_review;
 
     객체명.속성명 = 속성값; 의 형태가 불가능한 경우
 
-    1. Setter : 속성값을 대입하기 위한 method
-    2. Getter : 속성값을 조회하기 위한 method
+    1. Setter : 속성값을 대입(변경)하기 위한 method를 통칭합니다.
+        set+속성명으로 이루어져있습니다.
+        ex) setBatteryTime()
+        a. call2() 유형입니다.
+        b. 내부에 로직을 작성하여 필드의 논리적인 개념에 맞지 않는
+            데이터를 걸러낼 수 있습니다.(배터리타임이 음수면 아예 메서드를 정지시킬 수 있음)
+        생성자 때와 마찬가지로 alt + ins -> Setter 선택으로 자동 생성 가능
+        -> 매개변수와 argument는 서로 다른 개념이다.
+
+    2. Getter : 속성값을 조회하기 위한 method를 통칭
+        get+속성명으로 이루어져있습니다.
+        ex) getBatteryTime()
+        a. call3() 유형입니다.
+        b. main단계에서 데이터 조회시의 조작이 가능합니다.
+
+        ex) System.out.println(watch1.getButton() + "!"); // true!
+        setter와 마찬가지로 alt + ins를 통해서 작성이 가능합니다.
  */
 class SmartWatch {
     private boolean button;

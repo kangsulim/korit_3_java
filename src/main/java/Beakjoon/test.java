@@ -1,4 +1,4 @@
-package Beakjun;
+package Beakjoon;
 
 public class test {
     public static void main(String[] args) {

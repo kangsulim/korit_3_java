@@ -19,7 +19,7 @@ import java.util.Scanner;
         몸무게를 입력하시오 >>>
         당신의 BMI는 xx.xxxxx이며, ㅁㅁ입니다.
  */
-public class BmiCalc {
+public class BmiCalcMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double height, weight, bmi;

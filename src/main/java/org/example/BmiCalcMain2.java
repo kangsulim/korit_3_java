@@ -1,6 +1,5 @@
 package org.example;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
@@ -19,11 +18,18 @@ import java.util.Scanner;
         몸무게를 입력하시오 >>>
         당신의 BMI는 xx.xxxxx이며, ㅁㅁ입니다.
  */
-public class BmiCalcMain {
+public class BmiCalcMain2 {
     public static void main(String[] args) {
-        BmiCalc bmiCalc1 = new BmiCalc();
+        double bmi;
 
-        bmiCalc1.getBmi();
-        bmiCalc1.getBmiResult();
+        BmiCalc bmiCalc1 = new BmiCalc();
+        BmiCalc bmiCalc2 = new BmiCalc();
+
+        bmi = bmiCalc1.getBmi();    // 여러 개의 메서드에 기능을 분할함
+        bmiCalc1.getResult(bmi);
+
+        System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+
+        bmiCalc2.getBmiResult();    // 하나의 메서드에 기능을 집중함
     }
 }

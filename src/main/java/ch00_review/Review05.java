@@ -98,24 +98,24 @@ public class Review05 {
 
     public static void main(String[] args) {
         Review05 review05 = new Review05();
-        // 메서드 호출
-//        review05.writeSchedule("20250321", "메서드/오버로딩/클래스 복습");
-//        review05.writeSchedule(20250321, "메서드/오버로딩/클래스 복습");
+//         메서드 호출
+        review05.writeSchedule("20250321", "메서드/오버로딩/클래스 복습");
+        review05.writeSchedule(20250321, "메서드/오버로딩/클래스 복습");
 
-//        // 과제 메서드 호출 방식
-//        review05.isSeven(77);
-//        review05.isSeven(454789);
+        // 과제 메서드 호출 방식
+        review05.isSeven(77);
+        review05.isSeven(454789);
 
-//        // 다른 클래스를 선언하고 객체를 생성
-//        IsSeven isSeven = new IsSeven();
-//        isSeven.showSeven(77);
-//        isSeven.showSeven(454789);
+        // 다른 클래스를 선언하고 객체를 생성
+        IsSeven isSeven = new IsSeven();
+        isSeven.showSeven(77);
+        isSeven.showSeven(454789);
 
-//        review05.printLimitNumber(10);
-//        System.out.println();
+        review05.printLimitNumber(10);
+        System.out.println();
 
-//        review05.printEvenNumber(10);
-//        System.out.println();
+        review05.printEvenNumber(10);
+        System.out.println();
 
         review05.printSpecificNums(98, 3);
     }

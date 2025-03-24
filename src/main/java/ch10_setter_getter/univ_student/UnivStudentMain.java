@@ -2,6 +2,7 @@ package ch10_setter_getter.univ_student;
 
 public class UnivStudentMain {
     public static void main(String[] args) {
+
         UnivStudent student1 = new UnivStudent();
         student1.setName("김일");
         student1.setGrade(1);
