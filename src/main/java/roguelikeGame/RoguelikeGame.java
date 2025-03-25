@@ -161,7 +161,7 @@ public class RoguelikeGame {
 
         while (true) {
             System.out.println("\n==== 행동 선택 ====");
-            System.out.println("1. 몬스터 공격");
+            System.out.println("1. 몬스터 사냥");
             System.out.println("2. 체력 회복");
             System.out.println("3. 캐릭터 정보 보기");
             System.out.println("4. 게임 저장 및 종료");
@@ -170,7 +170,7 @@ public class RoguelikeGame {
 
             switch (choice) {
                 case 1 -> {
-                    System.out.println("공격할 몬스터를 선택하세요:");
+                    System.out.println("사냥할 몬스터를 선택하세요:");
                     System.out.println("1. slime\t2. skeleton\t3. goblin\t4. dragon");
                     int monsterChoice = scan.nextInt();
                     String monster = switch (monsterChoice) {

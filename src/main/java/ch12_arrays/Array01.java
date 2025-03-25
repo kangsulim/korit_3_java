@@ -55,5 +55,16 @@ public class Array01 {
         for (String arr : strArr1) {
             System.out.print(arr + "/");
         }
+
+        int[] arr03 = new int[10]; // 비어있는 배열 선언
+        arr03[0] = 0; // 초기화
+        arr03[1] = 0;
+        arr03[2] = 0;
+        arr03[3] = 0;
+
+        System.out.println(arr03[0]);
+
+        // 만약 element 가 특정한 규칙이 있다면
+        // -> 반복문을 통해서 값을 넣을 수 있다
     }
 }
