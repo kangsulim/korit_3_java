@@ -3,6 +3,28 @@ package roguelikeGame;
 import java.io.*;
 import java.util.Scanner;
 
+class Monster {
+    protected String name;
+    protected int power;
+    protected int health;
+
+    public Monster() {
+
+    }
+
+    public Monster(String name) {
+        this.name = name;
+    }
+}
+
+class Slime extends Monster {
+
+
+    Slime(String name) {
+        this.name = name;
+    }
+}
+
 class Character {
     private String name;
     private int health;
