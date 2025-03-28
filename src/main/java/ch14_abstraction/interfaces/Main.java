@@ -48,10 +48,29 @@ public class Main {
         tvRemoteController.onPressedVolumeUpButton();
         tvRemoteController.onUpVolumeUpButtonBySout();
         System.out.println(tvRemoteController.onUpVolumeUpButtonByString());
+        System.out.println();
 
         // 오류 발생 부분 TvRemoteController 의 생성자 정의 부분에서
         // this.volumeDownButton = volumeDownButton;
         // this.volumeUpButton = volumeUpButton;
         // 위의 두 라인을 적어주지 않아서 -> `alt + ins` 를 사용하여 자동으로 생성하도록 하자
+
+        System.out.println("-----에어컨 리모컨-----");
+
+        ACController acController = new ACController(new PowerButton(), new TempDownButton(), new TempUpButton());
+
+        acController.onPressedOnPowerButton();
+        System.out.println();
+
+        acController.onPressedTempDownButton();
+        acController.onDownTempDownButton();
+        System.out.println();
+
+        acController.onPressedTempUpButton();
+        acController.onUpTempUpButton();
+        System.out.println();
+
+        acController.onPressedOnPowerButton();
+        System.out.println();
     }
 }
