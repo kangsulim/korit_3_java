@@ -113,7 +113,7 @@ public class CentralControl {
                     갑자기 Computer, LED, Mouse 3가지 클래스의 객체가 computer.compute()를 실행함
                     -> 컴퓨터의 순서를 뒤로 보내니까 되기는 함
                     -> ** 알고 보니 'LED 와 Mouse' 가 Computer 를 상속받고 있었음 **
-                    -> implement 로 수정하니 정상 동작 함을 확인
+                    -> implement Power 로 수정하니 정상 동작 함을 확인
                  */
                 Computer computer = (Computer) device;
                 computer.compute();
