@@ -1,4 +1,4 @@
-package ch16_objects.teacher;
+package ch15_objects;
 
 import java.util.Objects;
 

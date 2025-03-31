@@ -1,4 +1,4 @@
-package ch16_objects;
+package ch15_objects;
 
 public class ObjectTestMain {
     public static void main(String[] args) {
