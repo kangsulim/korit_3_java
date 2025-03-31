@@ -21,7 +21,8 @@ public class Samsung {
         return instance;    // 결국 항상 같은 객체를 리턴함
     }
 
-    public String creatrSerialNumber(String model) {
+    // 시리얼 넘버를 또 하나의 메서드로 만들어서 관리함
+    public String creatrSerialNumber(String model) {    
         return model + "_" + ++serialNumber;
     }
 }

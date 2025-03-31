@@ -16,7 +16,7 @@ public class Factory {
         // 사실상 처음으로 객체 생성할 때는 Samsung samsung = new Samsung();이 실행되는 것이고
         // 이후에 새로 객체를 생성하려고 할 때에는 이 때 생성된 samsung 이라는 객체를 계속 사용하는 것이다.
 
-        samsung =samsung; // <- 이것이 아무 문제 없는 것을 보아 가능한 말임을 확인
+        samsung = samsung; // <- 이것이 아무 문제 없는 것을 보아 가능한 말임을 확인
         // 실제 결과에도 아무런 차이가 없음.
         /*
             1공장에서 스마트폰을 생산합니다.
