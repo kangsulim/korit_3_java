@@ -1,10 +1,9 @@
 package ch16_bean;
 
-import lombok.Setter;
 import lombok.Getter;
+import lombok.Setter;
 
-@Setter
-@Getter
+@Setter@Getter
 public class UserEntityLombok {
     private int userid;
     private int password;
