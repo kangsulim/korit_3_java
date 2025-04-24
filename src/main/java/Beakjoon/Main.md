@@ -1,7 +1,6 @@
-package Beakjoon;
+## 기존 코드
 
-import ch09_classes.students.Student;
-
+```java
 interface StudentService {
   add(student s);
   remove(int studentId);
@@ -33,9 +32,9 @@ public class Main {
     StudentRepository sr = new StudentRepository();
     StudentService ss = new StudentService(sr);
   }
-}
+}```
 
-/*
+
 ## 🔍 1. 원래 구조 (결합도가 높은 구조)
 
 ```java
@@ -114,4 +113,3 @@ public class Main {
 
 > 즉, 필요한 도구를 직접 만드는 게 아니라 **외부에서 주입받도록 하면 유연해진다**는 게 핵심!
 
- */
